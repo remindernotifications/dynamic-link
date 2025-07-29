@@ -22,7 +22,7 @@
         h1 {
             font-size: 32px;
             color: #333;
-            margin-bottom: 30px;
+            margin-bottom: 10px;
         }
 
         .buttons {
@@ -59,7 +59,30 @@
             color: #666;
             font-size: 14px;
         }
+
+        .description {
+            font-size: 16px;
+            color: #444;
+            margin-bottom: 24px;
+        }
+
+        .description-small {
+            font-size: 12px;
+            padding: 0 24px;
+            box-sizing: border-box;
+            margin-top: 100px;
+        }
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10962851362"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-10962851362');
+    </script>
 
     <script>
         window.onload = function () {
@@ -76,14 +99,20 @@
 </head>
 
 <body>
+    <img src="assets/logo-black.png" alt="Logo" style="width:100px; margin-bottom: 20px; border-radius: 16px;">
     <h1>Reminder Notifications</h1>
+    <div class="description">
+        Stay ahead of your schedule with pre-event notifications.
+    </div>
 
     <div class="buttons">
         <a class="btn" href="https://play.google.com/store/apps/details?id=com.remindernotifications">Google Play</a>
         <a class="btn apple" href="https://apps.apple.com/us/app/reminder-notification/id6746808992">App Store</a>
     </div>
 
-    <p>If you weren't redirected automatically, you can use the links above to download our app.</p>
+    <p class="description-small">(If you weren't redirected automatically, you can use the links above to download our
+        app.)
+    </p>
 </body>
 
 </html>
